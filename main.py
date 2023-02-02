@@ -6,7 +6,7 @@
 # This program was made to compute a data set of U.S GDP
 # which can be downloaded from https://fred.stlouisfed.org/series/GDPC1
 # we will be importing pandas,matplotlib,numpy,and scripy
-
+# hi
 import pandas as pd
 import matplotlib.pyplot as plt
 from math import log
