@@ -1,23 +1,21 @@
 # This sample code is taken from a problem set in my statistics class that was supposed to be done in Excell.
 # However, given that I haven't much practiced graphing on python,
-# and needed to brush up on handling data set, I did it in python. I particularily enjoyed working
+# and needed to brush up on handling data set, I did it in python. I particularly enjoyed working
 # on this project because it combined my two majors, Economics and Computer Science.
 
 # This program was made to compute a data set of U.S GDP
 # which can be downloaded from https://fred.stlouisfed.org/series/GDPC1
-# we will be importing pandas,matplotlib,numpy,and scripy
+# we will be importing pandas,matplotlib and numpy.
 # hi
 import pandas as pd
 import matplotlib.pyplot as plt
 from math import log
 import numpy as np
-from scipy.stats import skew
-from scipy.stats import kurtosis
 
 # the initial reading of the data set will need path adjustement based on where the csv file is located
-# in my case,the csv file is in the same location as the code so there in no need to specifcy the path.
+# in my case,the csv file is in the same location as the code so there in no need to specifically the path.
 
-df = pd.read_csv('GDP.csv')
+df = pd.read_csv(':\samplecode:\PycharmProjects/Downloads/GDP.csv')
 df.plot()
 
 # Next, we plot the logarithm of the data set
@@ -85,8 +83,3 @@ def standard_error(data):
 
 variance(logdf['Delta log'])
 standard_error(logdf["Delta log"])
-
-# Alternatively, scripy.stats can compute
-
-print('the coefficient of skewness is', skew(logdf['Delta log']))
-print('the coefficient of kurtosis is', kurtosis(logdf['Delta log']))
