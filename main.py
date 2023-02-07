@@ -15,7 +15,7 @@ import numpy as np
 # the initial reading of the data set will need path adjustement based on where the csv file is located
 # in my case,the csv file is in the same location as the code so there in no need to specifically the path.
 
-df = pd.read_csv(':\samplecode:\PycharmProjects/Downloads/GDP.csv')
+df = pd.read_csv('GDP.csv')
 df.plot()
 
 # Next, we plot the logarithm of the data set
